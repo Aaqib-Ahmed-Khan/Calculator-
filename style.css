@@ -1,0 +1,41 @@
+
+body {
+    background-image: url('images.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.calculator {
+    background-color: #2f3447; 
+    width: 280px; 
+margin-left: 390px;
+    padding: 20px;
+    color: aliceblue;
+}
+.btn-primary {
+    background-color: #073879; 
+    border-color: #d00000; 
+    width: 60px;
+    height: 60px; 
+    font-size: 24px; 
+}
+.btn-primary:hover {
+    background-color: #060c12;
+    border-color: #cd0101; 
+}
+.btn-square {
+    border-radius: 10px;
+}
+.form-control {
+    width: 100%; 
+}
+#result {
+    font-size: 24px;
+    margin-bottom: 20px; 
+    color: rgb(121, 237, 237);
+}
+#footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #7293ff;
+}

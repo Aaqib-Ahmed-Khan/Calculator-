@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="calculator border rounded p-4 shadow">
+            <h2 class="text-center mb-4">Calculator</h2>
+            <input id="num" class="form-control mb-2" placeholder="" onkeyup="checkExpression()">
+            <h4 id="result" class="text-center mb-4"></h4>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('1')">1</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('2')">2</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('3')">3</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('+')">+</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('4')">4</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('5')">5</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('6')">6</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('-')">-</button>
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('7')">7</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('8')">8</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('9')">9</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('*')">x</button>
+                </div>
+                <div class="row-4">
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('0')">0</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="calculateResult()">=</button>
+                    <button class="btn btn-primary btn-square mb-2" onclick="appendToExpression('/')">/</button>
+              
+                    <button class="btn btn-danger btn-square mb-2"" onclick="clearCalculator()">C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="app.js"></script>
+<footer id="footer">Made by Aaqib Ahmed</footer>
+</body>
+</html>
+
+
+
+
